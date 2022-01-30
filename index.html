@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="devchallenges.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Devchallenges</title>
+</head>
+
+<body>
+  <h1 id="title">Checkout</h1>
+  <aside id="summary">
+    <div class="item">
+      <img id="photo1" src="./photo1.png">
+      <div class="item_details">
+        <h3 id="item1">Vintage Backbag</h3>
+        <div class="price">
+          <div class="new_price">$54.99</div>
+          <div class="old_price">$94.99</div>
+        </div>
+        <div class="quantity_frame">
+          <button class="minus">-</button>
+          <h2 id="quantity1">1</h2>
+          <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img id="photo2" src="./photo2.png">
+      <div class="item_details">
+        <h3 id="item1">Vintage Backbag</h3>
+        <div class="price">
+          <div class="new_price">$54.99</div>
+          <div class="old_price">$94.99</div>
+        </div>
+        <div class="quantity_frame">
+          <button class="minus">-</button>
+          <h2 id="quantity1">1</h2>
+          <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div id="priceSummary">
+      <hr>
+      <div>
+        <h3>Shipping</h3>
+        <h4>$19</h4>
+      </div>
+      <hr>
+      <div>
+        <h3>Total</h3>
+        <h4>$148.98</h4>
+      </div>
+    </div>
+  </aside>
+  <form method="get">
+    <div class="contact">
+      <h3>Contact Information</h3>
+      <label>E-mail</label>
+      <div class="input">
+        <i class="material-icons">
+          email
+        </i>
+        <input type="email" placeholder="Enter your email..." />
+      </div>
+      <label>Phone</label>
+      <div class="input"> <i class="material-icons">
+          phone
+        </i>
+        <input type="number" placeholder="Enter your phone..." />
+      </div>
+    </div>
+    <div class="shipping">
+      <h3>Shipping address</h3>
+      <label>Full name</label>
+      <div class="input">
+        <i class="material-icons">
+          account_circle
+        </i>
+        <input type="text" value="Rodney Cotton" />
+      </div>
+      <label>Address</label>
+      <div class="input">
+        <i class="material-icons">
+          home
+        </i>
+        <input type="text" placeholder="Your address.." />
+      </div>
+      <label>City</label>
+      <div class="input">
+        <i class="material-icons">
+          location_city
+        </i>
+        <input type="text" placeholder="Your city.." />
+      </div>
+      <div class="area">
+        <div id="country">
+          <label>Country</label>
+          <div class="input"> <i class="material-icons">
+              public
+            </i>
+            <select>
+              <option selected disabled>Your country..</option>
+            </select>
+          </div>
+        </div>
+        <div id="postal">
+          <label>Postal code</label>
+          <div class="input"> <i class="material-icons">
+              markunread_mailbox
+            </i>
+            <input type="text" placeholder="Your postal code..">
+          </div>
+        </div>
+      </div>
+      <label id="spec"><input id="save" type="checkbox">Save this information for next time</label>
+    </div>
+    <button type="submit">Continue</button>
+  </form>
+</body>
+
+</html>
